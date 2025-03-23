@@ -3,6 +3,7 @@
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
+use App\Models\Blog;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
@@ -12,7 +13,7 @@ Route::get('/', function () {
 
 Route::get('/dashboard', function () {
     $users = User::count();
-    $blogs = 5;
+    $blogs = Blog::count();
     return view('dashboard', compact('users', 'blogs'));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
