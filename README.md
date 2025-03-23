@@ -76,3 +76,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
     8. php artisan migrate
     9. php artisan db:seed
     10. php artisan serve
+
+## Admin User Credentials
+    email: admin@admin.com
+    password: password
