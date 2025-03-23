@@ -64,3 +64,15 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Setup Project 
+    1. git clone https://github.com/Yekdevrc/blog-management-system.git
+    2. cd blog-management-system
+    3. composer install
+    4. copy .env.example file and rename it to .env
+    5. php artisan key:generate
+    6. update .env with your database credentials
+    7. php artisan storage:link
+    8. php artisan migrate
+    9. php artisan db:seed
+    10. php artisan serve
